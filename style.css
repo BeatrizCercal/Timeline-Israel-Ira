@@ -1,9 +1,266 @@
-*{
-    background-color:rgb(218, 229, 227);
+* {
+    background-color: rgb(218, 229, 227);
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(86, 124, 124) ;
+    color: rgb(86, 124, 124);
+}
+
+/*Teste*/
+
+.timeline {
+  position: relative;
+  margin: 4rem auto;
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Linha  */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #9D9D9D;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* esquerda ou direita */
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+/* fim esquerda ou direita */
+
+
+/* Marcador */
+.marcador {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(0%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timeline-item:nth-child(even) .marcador {
+  left: 0%;
+  flex-direction: row-reverse;
+}
+
+.M-circulo {
+  width: 20px;
+  transform: translate(-50%, -0%);
+  height: 20px;
+  background-color: #E017C5;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.M-ano {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.M-circuloE {
+  width: 20px;
+  transform: translate(-310%, -0%);
+  height: 20px;
+  background-color: #E017C5;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.M-anoE {
+  font-size: 1.2rem;
+  transform: translate(-150%, -0%);
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Fim Marcador */
+
+
+.timeline-conteudo {
+  background-color: #1c1f2b;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  margin: 4%;
+
+  opacity: 0;
+  transform: scale(0.8);
+  animation: slide-in-right 0.6s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 80%;
+}
+
+.timeline-conteudoE {
+  background-color: #1c1f2b;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  margin: 4%;
+
+  opacity: 0;
+  transform: scale(0.8);
+  animation: slide-in-left 0.6s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 80%;
+}
+
+.timeline-conteudo h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.timeline-conteudo p {
+  line-height: 1.6;
+}
+
+.timeline-conteudo img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.timeline-conteudoE h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.timeline-conteudoE p {
+  line-height: 1.6;
+}
+
+.timeline-conteudoE img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ANIMAÇÃO */
+@keyframes fade-in {
+  from { opacity: -1; transform: scale(0.6);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(100px);}
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* end of animation for Robotics  */
+
+
+
+
+
+/* Carrosel de imagem externo */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/* Carrosel de imagem */
+
+.carrosel {
+  margin-top: 5%;
+}
+
+.imgCarrosel {
+  max-height: 60%;
+}
+
+/* Fim Carrosel de imagem */
+
+
+
+
+/* BANNER Robotics */
+.intro-banner {
+  position: relative;
+  height: 18.75rem;
+
+  background-color: transparent;
+
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+}
+
+.intro-banner h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.intro-banner p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  opacity: 0.85;
 }
