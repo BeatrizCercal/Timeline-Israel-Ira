@@ -197,7 +197,8 @@ h1 {
 body { font-family: sans-serif; }
 
 .gallery {
-  background: #EEE;
+  background: #eee;
+  display: flex;
 }
 
 .gallery-cell {
@@ -225,7 +226,16 @@ body { font-family: sans-serif; }
 }
 
 .imgCarrosel {
-  max-height: 60%;
+  width: 300px;          /* largura padrão para os slides */
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.imgCarrosel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 /* Fim Carrosel de imagem */
