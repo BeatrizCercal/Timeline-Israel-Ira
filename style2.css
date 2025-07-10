@@ -13,3 +13,16 @@
 h1{
     text-align: center;
 }
+
+
+   .fotos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+   }
+
+   .container-fotos {
+       display: flex;
+       justify-content: center;
+       gap: 20px;
+   }
