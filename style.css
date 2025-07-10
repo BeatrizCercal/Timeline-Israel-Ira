@@ -661,3 +661,16 @@
    .project-right {
        justify-content: flex-end;
    }
+
+   .fotos{
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    position: relative;
+    align-items: center;
+   }
+
+   .fotos img{
+    max-width: 140%;
+    border-radius: 70px;
+   }
