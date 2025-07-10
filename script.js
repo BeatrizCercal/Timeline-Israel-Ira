@@ -1,4 +1,4 @@
-alert("Caso as imagens não estejam sendo carregadas corretamente ou apareçam sobrepostas verticalmente, recomenda-se recarregar a página.\n \nBeatriz Cercal & Miguel Rocha - A Evolução Histórica e Econômica dos Conflitos entre Israel e Irã");
+// alert("Caso as imagens não estejam sendo carregadas corretamente ou apareçam sobrepostas verticalmente, recomenda-se recarregar a página.\n \nBeatriz Cercal & Miguel Rocha - A Evolução Histórica e Econômica dos Conflitos entre Israel e Irã");
 
 
 if (navigation.addEventListener) {
