@@ -10,9 +10,13 @@
 
 }
 
+p {
+    text-align: center;
+}
+
 .texto p {
     position: relative;
-    background-color: rgb(167, 190, 190);
+    background-color: rgb(152, 218, 218);
     height: 90px;
 }
 
@@ -20,6 +24,15 @@ h1 {
     text-align: center;
 }
 
+#ppp {
+    position: relative;
+    bottom: 15px;
+}
+
+#fff {
+    position: relative;
+    bottom: 40px;
+}
 
 .fotos img {
     width: 150px;
