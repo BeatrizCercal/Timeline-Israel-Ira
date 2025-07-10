@@ -1,0 +1,15 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+     background: azure;
+}
+.texto{
+    max-width: 100%;
+    width: 100px;
+    height: 40px;
+    background-color: antiquewhite;
+    border-radius: 70px;
+}
+h1{
+    text-align: center;
+}
